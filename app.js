@@ -37,7 +37,7 @@ app.post("/post", (req, res) => {
     Author: Author,
   });
 
-  res.send("Post added successfully");
+  res.status(201).json({ msg: "Post created successfully" });
 });
 
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
