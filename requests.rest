@@ -1,0 +1,17 @@
+get http://localhost:8080
+
+###
+
+get http://localhost:8080/posts
+
+
+###
+
+post http://localhost:8080/post
+Content-Type: application/json
+
+{
+    "PostID": 4,
+    "Post": "Post 4",
+    "Author": "James"
+}
