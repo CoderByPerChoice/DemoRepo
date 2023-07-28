@@ -31,13 +31,11 @@ app.post("/post", (req, res) => {
   const Post = req.body.Post;
   const Author = req.body.Author;
 
-  POSTS.push([
-    {
-      PostID: PostID,
-      Post: Post,
-      Author: Author,
-    },
-  ]);
+  POSTS.push({
+    PostID: PostID,
+    Post: Post,
+    Author: Author,
+  });
 
   res.send("Post added successfully");
 });
